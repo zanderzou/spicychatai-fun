@@ -1,0 +1,34 @@
+# SpicyChat AI Guide
+
+> An independent SpicyChat AI guide to uncensored AI roleplay, characters, models, context memory, personas, pricing, safety, and alternatives.
+
+Canonical publication: https://spicychatai.fun/
+
+This is an independent editorial publication, not the official provider. Articles distinguish published provider information from suggested evaluation methods. Examples and proposed tests are not measured benchmark results. Check dated sources and live provider terms for changing features and prices.
+
+## Main pages
+
+- [Homepage](https://spicychatai.fun/): Overview and practical decision guidance.
+- [Blog and comparisons](https://spicychatai.fun/blog/): Browse the editorial article collection.
+
+## Comparisons
+
+- [Spicy Chat AI vs CrushOn AI: Controls, Memory and Cost](https://spicychatai.fun/blog/spicy-chat-ai-vs-crushon-ai/)
+- [Spicy Chat AI vs GirlfriendGPT: Roleplay or Companion Media?](https://spicychatai.fun/blog/spicy-chat-ai-vs-girlfriendgpt/)
+- [Spicy Chat AI vs PolyBuzz: Roleplay Control or Visual Discovery?](https://spicychatai.fun/blog/spicy-chat-ai-vs-polybuzz/)
+- [SpicyChat vs Character.AI: Which Roleplay Platform Fits?](https://spicychatai.fun/blog/spicychat-vs-character-ai/)
+- [SpicyChat vs Janitor AI: Characters, Models & Memory](https://spicychatai.fun/blog/spicychat-vs-janitor-ai/)
+
+## Publication information
+
+- [About](https://spicychatai.fun/about/)
+- [Editorial policy](https://spicychatai.fun/editorial-policy/)
+- [Contact](https://spicychatai.fun/contact/)
+- [Privacy policy](https://spicychatai.fun/privacy/)
+- [Terms](https://spicychatai.fun/terms/)
+
+## Optional
+
+- [XML sitemap](https://spicychatai.fun/sitemap-index.xml): Canonical page inventory.
+- [RSS feed](https://spicychatai.fun/rss.xml): Published article updates.
+- [Robots policy](https://spicychatai.fun/robots.txt): Crawler access directives.
