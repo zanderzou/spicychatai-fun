@@ -6,8 +6,8 @@ interface Props { posts: CollectionEntry<"blog">[]; }
 const { posts } = Astro.props;
 ---
 <footer><div class="footer-grid">
-  <div><a class="brand" href="/"><span class="brand-icon">SC</span><strong>SpicyChat<span>AI</span></strong><small>INDEPENDENT GUIDE</small></a><p>Independent research on SpicyChat AI characters, uncensored roleplay, models, context memory, personas, pricing, privacy, and alternatives.</p></div>
+  <div><a class="brand" href="/"><span class="brand-icon">SC</span><strong>Spicy Chat <span>AI</span></strong></a><p>Independent research on SpicyChat AI characters, uncensored roleplay, models, context memory, personas, pricing, privacy, and alternatives.</p></div>
   <div><h3>Explore</h3><a href="/#features">SpicyChat features</a><a href="/#compare">Roleplay comparisons</a><a href="/#privacy">Memory & privacy</a><a href={site.officialUrl} rel="noopener" target="_blank">Official website <Icon name="arrow" /></a></div>
   <div><h3>Latest guides</h3>{posts.slice(0,3).map((post)=><a href={`/blog/${post.id}/`}>{post.data.title}</a>)}</div>
   <div><h3>Information</h3><a href="/about/">About</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/editorial-policy/">Editorial policy</a><a href="/contact/">Contact</a></div>
-</div><div class="footer-bottom"><span>© <span data-year>2026</span> SpicyChat AI Guide</span><span>Independent · Not affiliated with SpicyChat</span><span>Adults 18+ · No chat data collected</span></div></footer>
+</div><div class="footer-bottom"><span>© <span data-year>2026</span> Spicy Chat AI</span><span>Independent · Not affiliated with SpicyChat</span><span>Adults 18+ · No chat data collected</span></div></footer>

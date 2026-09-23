@@ -1,5 +1,5 @@
 export const site = {
-  name: "SpicyChat AI Guide",
+  name: "Spicy Chat AI",
   domain: "spicychatai.fun",
   url: "https://spicychatai.fun",
   description: "An independent SpicyChat AI guide to uncensored AI roleplay, characters, models, context memory, personas, pricing, safety, and alternatives.",
