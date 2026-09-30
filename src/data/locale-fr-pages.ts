@@ -5,7 +5,7 @@ export const frEdition: LocalizedEdition = {
   ui: {
     language: "Langue", home: "Accueil", start: "Bien débuter", controls: "Modèles et mémoire", compare: "Comparer", blog: "Articles",
     about: "À propos", contact: "Contact", editorial: "Ligne éditoriale", privacy: "Confidentialité", terms: "Conditions d'utilisation",
-    official: "Ouvrir SpicyChat", read: "Lire le comparatif", sources: "Sources officielles", allArticles: "Tous les comparatifs", more: "En savoir plus",
+    official: "Ouvrir SpicyChat", read: "Lire le comparatif", sources: "Sources officielles", verdict: "À retenir", allArticles: "Tous les comparatifs", more: "En savoir plus",
     independent: "Publication indépendante, sans affiliation avec SpicyChat", adults: "Informations destinées aux adultes",
     analyticsSettings: "Préférences de mesure", analyticsTitle: "Mesure d'audience facultative",
     analyticsBody: "Acceptez-vous Google Analytics pour nous aider à améliorer les pages consultées ? Aucune personnalisation publicitaire n'est activée.",

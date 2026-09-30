@@ -5,7 +5,7 @@ export const ruEdition: LocalizedEdition = {
   ui: {
     language: "Язык", home: "Главная", start: "С чего начать", controls: "Модель и память", compare: "Сравнение", blog: "Статьи",
     about: "О проекте", contact: "Контакты", editorial: "Редакционная политика", privacy: "Конфиденциальность", terms: "Условия",
-    official: "Официальный SpicyChat", read: "Читать сравнение", sources: "Первоисточники", allArticles: "Все сравнения", more: "Подробнее",
+    official: "Официальный SpicyChat", read: "Читать сравнение", sources: "Первоисточники", verdict: "Вывод", allArticles: "Все сравнения", more: "Подробнее",
     independent: "Независимое издание, не связанное с командой SpicyChat", adults: "Информация для взрослых",
     analyticsSettings: "Настройки аналитики", analyticsTitle: "Необязательная аналитика",
     analyticsBody: "Разрешить Google Analytics, чтобы мы понимали, какие страницы стоит улучшить? Для персонализации рекламы аналитика не используется.",

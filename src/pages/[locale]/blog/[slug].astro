@@ -36,7 +36,7 @@ const jsonLd = { "@context": "https://schema.org", "@graph": [
           <p class="article-lede">{copy.intro}</p>
           <div class="compare-table localized-table"><table><thead><tr><th scope="col">{labels.compare}</th><th scope="col">SpicyChat</th><th scope="col">{slug.includes("character-ai") ? "Character.AI" : slug.includes("janitor") ? "Janitor AI" : slug.includes("crushon") ? "CrushOn AI" : slug.includes("polybuzz") ? "PolyBuzz" : "GirlfriendGPT"}</th></tr></thead><tbody>{copy.dimensions.map(([dimension, first, second]) => <tr><th scope="row">{dimension}</th><td data-label="SpicyChat">{first}</td><td data-label={slug.includes("character-ai") ? "Character.AI" : slug.includes("janitor") ? "Janitor AI" : slug.includes("crushon") ? "CrushOn AI" : slug.includes("polybuzz") ? "PolyBuzz" : "GirlfriendGPT"}>{second}</td></tr>)}</tbody></table></div>
           {copy.sections.map(([heading, body], index) => <section id={`section-${index + 1}`}><h2>{heading}</h2><p>{body}</p></section>)}
-          <section class="article-verdict"><h2>{locale === "ja" ? "結論" : locale === "ko" ? "결론" : labels.compare}</h2><p>{copy.verdict}</p></section>
+          <section class="article-verdict"><h2>{labels.verdict}</h2><p>{copy.verdict}</p></section>
         </div>
         <section class="sources" id="sources"><h2>{labels.sources}</h2><ul>{comparisonSources[slug].map((source) => <li><a href={source.url} rel="noopener" target="_blank">{source.name}</a></li>)}</ul></section>
       </div>

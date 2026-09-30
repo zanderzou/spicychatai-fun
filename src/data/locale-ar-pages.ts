@@ -5,7 +5,7 @@ export const arEdition: LocalizedEdition = {
   ui: {
     language: "اللغة", home: "الرئيسية", start: "البداية", controls: "النموذج والذاكرة", compare: "المقارنة", blog: "المقالات",
     about: "من نحن", contact: "التواصل", editorial: "السياسة التحريرية", privacy: "الخصوصية", terms: "شروط الاستخدام",
-    official: "فتح SpicyChat", read: "قراءة المقارنة", sources: "المصادر الأصلية", allArticles: "جميع المقارنات", more: "المزيد",
+    official: "فتح SpicyChat", read: "قراءة المقارنة", sources: "المصادر الأصلية", verdict: "الخلاصة", allArticles: "جميع المقارنات", more: "المزيد",
     independent: "موقع تحريري مستقل وغير تابع لـ SpicyChat", adults: "معلومات مخصصة للبالغين",
     analyticsSettings: "إعدادات التحليلات", analyticsTitle: "تحليلات اختيارية",
     analyticsBody: "هل تسمح باستخدام Google Analytics لمعرفة الصفحات التي تحتاج إلى تحسين؟ لا نفعّل تخصيص الإعلانات.",

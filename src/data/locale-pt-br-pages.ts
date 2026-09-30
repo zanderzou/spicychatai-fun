@@ -5,7 +5,7 @@ export const ptBrEdition: LocalizedEdition = {
   ui: {
     language: "Idioma", home: "Início", start: "Começar", controls: "Modelo e memória", compare: "Comparar", blog: "Comparativos",
     about: "Sobre", contact: "Contato", editorial: "Política editorial", privacy: "Privacidade", terms: "Termos",
-    official: "Site oficial do SpicyChat", read: "Ler comparação", sources: "Fontes oficiais", allArticles: "Todos os comparativos", more: "Saiba mais",
+    official: "Site oficial do SpicyChat", read: "Ler comparação", sources: "Fontes oficiais", verdict: "Conclusão", allArticles: "Todos os comparativos", more: "Saiba mais",
     independent: "Publicação independente, sem vínculo com a equipe do SpicyChat", adults: "Conteúdo informativo para adultos",
     analyticsSettings: "Preferências de análise", analyticsTitle: "Análise de acesso opcional",
     analyticsBody: "Você permite o uso do Google Analytics para entender quais páginas precisam melhorar? Não usamos essa opção para personalizar anúncios.",

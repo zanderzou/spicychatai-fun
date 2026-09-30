@@ -19,7 +19,7 @@ export interface LocalizedEdition {
   ui: {
     language: string; home: string; start: string; controls: string; compare: string; blog: string;
     about: string; contact: string; editorial: string; privacy: string; terms: string;
-    official: string; read: string; sources: string; allArticles: string; more: string;
+    official: string; read: string; sources: string; verdict: string; allArticles: string; more: string;
     independent: string; adults: string; analyticsSettings: string; analyticsTitle: string;
     analyticsBody: string; analyticsDecline: string; analyticsAccept: string;
     analyticsPrivacy: string; analyticsStatusPrivacy: string; analyticsStatusOn: string;
@@ -56,7 +56,7 @@ export const localizedPages: Partial<Record<Locale, LocalizedEdition>> = {
     ui: {
       language: "言語", home: "ホーム", start: "始め方", controls: "モデルと記憶", compare: "比較", blog: "比較記事",
       about: "このサイトについて", contact: "連絡先", editorial: "編集方針", privacy: "プライバシー", terms: "利用条件",
-      official: "SpicyChat 公式サイト", read: "比較を読む", sources: "一次資料", allArticles: "比較記事一覧", more: "詳しく見る",
+      official: "SpicyChat 公式サイト", read: "比較を読む", sources: "一次資料", verdict: "結論", allArticles: "比較記事一覧", more: "詳しく見る",
       independent: "SpicyChat の運営元とは関係のない独立した情報サイト", adults: "成人向けの情報",
       analyticsSettings: "アクセス解析の設定", analyticsTitle: "任意のアクセス解析",
       analyticsBody: "記事の改善に Google Analytics を利用してもよいですか。広告追跡には使いません。",
@@ -229,7 +229,7 @@ export const localizedPages: Partial<Record<Locale, LocalizedEdition>> = {
     ui: {
       language: "언어", home: "홈", start: "시작하기", controls: "모델과 기억", compare: "비교", blog: "비교 글",
       about: "사이트 소개", contact: "연락처", editorial: "편집 원칙", privacy: "개인정보", terms: "이용 조건",
-      official: "SpicyChat 공식 사이트", read: "비교 읽기", sources: "공식 자료", allArticles: "비교 글 모두 보기", more: "자세히 보기",
+      official: "SpicyChat 공식 사이트", read: "비교 읽기", sources: "공식 자료", verdict: "결론", allArticles: "비교 글 모두 보기", more: "자세히 보기",
       independent: "SpicyChat 운영사와 무관한 독립 정보 사이트", adults: "성인을 위한 정보",
       analyticsSettings: "방문 분석 설정", analyticsTitle: "선택적 방문 분석",
       analyticsBody: "글을 개선하기 위해 Google Analytics를 사용해도 될까요? 광고 추적에는 사용하지 않습니다.",

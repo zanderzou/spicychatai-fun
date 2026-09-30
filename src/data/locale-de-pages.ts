@@ -5,7 +5,7 @@ export const deEdition: LocalizedEdition = {
   ui: {
     language: "Sprache", home: "Startseite", start: "Einstieg", controls: "Modell & Gedächtnis", compare: "Vergleiche", blog: "Artikel",
     about: "Über uns", contact: "Kontakt", editorial: "Redaktionsgrundsätze", privacy: "Datenschutz", terms: "Nutzungsbedingungen",
-    official: "SpicyChat öffnen", read: "Vergleich lesen", sources: "Originalquellen", allArticles: "Alle Vergleiche", more: "Mehr erfahren",
+    official: "SpicyChat öffnen", read: "Vergleich lesen", sources: "Originalquellen", verdict: "Fazit", allArticles: "Alle Vergleiche", more: "Mehr erfahren",
     independent: "Unabhängige Redaktion; nicht Teil von SpicyChat", adults: "Informationen für Erwachsene",
     analyticsSettings: "Analyse-Einstellungen", analyticsTitle: "Freiwillige Reichweitenmessung",
     analyticsBody: "Dürfen wir Google Analytics einsetzen, um zu sehen, welche Artikel wir verbessern sollten? Wir nutzen die Daten nicht für personalisierte Werbung.",

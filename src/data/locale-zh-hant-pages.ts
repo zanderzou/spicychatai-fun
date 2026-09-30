@@ -6,7 +6,7 @@ export const zhHantEdition: LocalizedEdition = {
   ui: {
     language: "語言", home: "首頁", start: "從這裡開始", controls: "模型與記憶", compare: "產品比較", blog: "比較文章",
     about: "關於本站", contact: "聯絡我們", editorial: "編輯原則", privacy: "隱私權", terms: "使用條款",
-    official: "前往 SpicyChat 官方網站", read: "閱讀比較", sources: "原始資料", allArticles: "所有比較文章", more: "延伸閱讀",
+    official: "前往 SpicyChat 官方網站", read: "閱讀比較", sources: "原始資料", verdict: "結論", allArticles: "所有比較文章", more: "延伸閱讀",
     independent: "獨立編輯網站，非 SpicyChat 官方服務", adults: "僅供成年人參考",
     analyticsSettings: "分析資料設定", analyticsTitle: "選擇是否啟用流量分析",
     analyticsBody: "我們希望透過 Google Analytics 了解文章的使用情況；不作廣告追蹤。只有取得你的同意才會載入分析工具。",
