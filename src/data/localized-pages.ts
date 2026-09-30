@@ -3,6 +3,7 @@ import { zhHantEdition } from "./locale-zh-hant-pages";
 import { esEdition } from "./locale-es-pages";
 import { ptBrEdition } from "./locale-pt-br-pages";
 import { ruEdition } from "./locale-ru-pages";
+import { deEdition } from "./locale-de-pages";
 
 export interface LocalizedInfoPage {
   title: string;
@@ -46,6 +47,7 @@ export const localizedPages: Partial<Record<Locale, LocalizedEdition>> = {
   es: esEdition,
   "pt-br": ptBrEdition,
   ru: ruEdition,
+  de: deEdition,
   ja: {
     ui: {
       language: "言語", home: "ホーム", start: "始め方", controls: "モデルと記憶", compare: "比較", blog: "比較記事",

@@ -3,6 +3,7 @@ import { zhHantArticles } from "./locale-zh-hant-articles";
 import { esArticles } from "./locale-es-articles";
 import { ptBrArticles } from "./locale-pt-br-articles";
 import { ruArticles } from "./locale-ru-articles";
+import { deArticles } from "./locale-de-articles";
 
 export interface LocalizedArticle {
   title: string;
@@ -52,6 +53,7 @@ export const localizedArticles: Partial<Record<Locale, Record<ComparisonSlug, Lo
   es: esArticles,
   "pt-br": ptBrArticles,
   ru: ruArticles,
+  de: deArticles,
   ja: {
     "spicychat-vs-character-ai": {
       title: "Spicy Chat AI と Character.AI：物語の自由度とルールを比較",
