@@ -5,6 +5,7 @@ import { ptBrEdition } from "./locale-pt-br-pages";
 import { ruEdition } from "./locale-ru-pages";
 import { deEdition } from "./locale-de-pages";
 import { frEdition } from "./locale-fr-pages";
+import { arEdition } from "./locale-ar-pages";
 
 export interface LocalizedInfoPage {
   title: string;
@@ -50,6 +51,7 @@ export const localizedPages: Partial<Record<Locale, LocalizedEdition>> = {
   ru: ruEdition,
   de: deEdition,
   fr: frEdition,
+  ar: arEdition,
   ja: {
     ui: {
       language: "言語", home: "ホーム", start: "始め方", controls: "モデルと記憶", compare: "比較", blog: "比較記事",

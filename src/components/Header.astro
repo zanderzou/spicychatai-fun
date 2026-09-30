@@ -25,7 +25,7 @@ const currentLabel = locale === "zh-hant" ? "繁中" : current.toUpperCase();
   </nav>
   <a class="official-link" href={site.officialUrl} rel="noopener" target="_blank">{copy?.official ?? "Open official SpicyChat"} <Icon name="arrow" /></a>
   {availableLocales.length > 0 && <details class="language-menu"><summary aria-label={copy?.language ?? "Language"}>{currentLabel}</summary><div>{options.map((item) => <a href={item.href} lang={item.lang} aria-current={item.lang === current ? "page" : undefined}>{item.label}</a>)}</div></details>}
-  <button class="menu-button" type="button" aria-label={copy?.menu ?? "Open menu"} aria-expanded="false" data-menu-button><Icon name="menu" /></button>
+  <button class="menu-button" type="button" aria-label={copy?.menu ?? "Open menu"} aria-expanded="false" data-menu-button data-open-label={copy?.menu ?? "Open menu"} data-close-label={copy?.closeMenu ?? "Close menu"}><Icon name="menu" /></button>
   <div class="mobile-nav" data-mobile-nav>
     <a href={`${home}#how-it-works`}>{copy?.start ?? "Start"}</a>
     <a href={`${home}#features`}>{copy?.controls ?? "Models & memory"}</a>

@@ -23,6 +23,7 @@ const domain = new URL(site.url).hostname;
   #analytics-settings{font:inherit;font-size:12px;line-height:1.5;color:inherit;background:transparent;border:0;text-decoration:underline;text-underline-offset:3px;cursor:pointer;opacity:.8}
   #analytics-notice[hidden]{display:none!important}
   #analytics-notice{box-sizing:border-box;position:fixed;inset:auto 20px 20px;z-index:1000;margin:0 auto;max-width:920px;display:flex;align-items:center;gap:24px;padding:20px 24px;border:1px solid #5b5669;border-radius:16px;background:#19171f;color:#f6f3fc;box-shadow:0 8px 40px #0005;font:14px/1.55 system-ui,sans-serif;text-align:left}
+  :global([dir="rtl"]) #analytics-notice{text-align:right}
   #analytics-notice strong{font-size:15px}
   #analytics-notice p{font:inherit;color:#e0dce9;margin:5px 0 0;max-width:64ch}
   #analytics-notice a{color:#e7d8ff;text-decoration:underline}
