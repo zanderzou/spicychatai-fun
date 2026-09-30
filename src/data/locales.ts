@@ -1,5 +1,5 @@
-// Draft route inventory. Do not expose alternate-language URLs until every
-// edition has its own complete content and the 120-route audit passes.
+// Draft route inventory. Each language is published only after its full
+// 12-page edition and reciprocal links have passed a separate release gate.
 export const locales = [
   { slug: "ja", lang: "ja", label: "日本語", dir: "ltr" },
   { slug: "ko", lang: "ko", label: "한국어", dir: "ltr" },
@@ -23,12 +23,18 @@ export type ComparisonSlug = typeof comparisonSlugs[number];
 export const infoPageKeys = ["about", "contact", "editorial-policy", "privacy", "terms"] as const;
 export type InfoPageKey = typeof infoPageKeys[number];
 
+// Slow-roll release ledger. Add at most one fully verified locale per release.
+// An empty list keeps all translated routes out of production and its sitemap.
+export const publishedLocales: readonly Locale[] = [];
+export const draftReadyLocales = ["ja", "ko"] as const;
+export const isPublishedLocale = (locale: Locale) => publishedLocales.includes(locale);
+
 export function routeFor(locale: Locale | "", page = "") {
   const cleanPage = page.replace(/^\/+|\/+$/g, "");
   return `${locale ? `/${locale}` : ""}/${cleanPage ? `${cleanPage}/` : ""}`;
 }
 
-export function languageAlternates(pathname: string) {
+export function languageAlternates(pathname: string, included: readonly Locale[] = publishedLocales) {
   const englishPath = pathname.replace(/^\/(?:ja|ko|zh-hant|es|pt-br|ru|de|fr|ar)(?=\/)/, "") || "/";
-  return [{ lang: "en", href: englishPath }, ...locales.map(({ slug, lang }) => ({ lang, href: `/${slug}${englishPath}` }))];
+  return [{ lang: "en", href: englishPath }, ...locales.filter(({ slug }) => included.includes(slug)).map(({ slug, lang }) => ({ lang, href: `/${slug}${englishPath}` }))];
 }

@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import LocalizedPostCard from "../../../components/LocalizedPostCard.astro";
+import { activeLocales } from "../../../data/active-locales";
+import { comparisonSlugs, isPublishedLocale, type Locale } from "../../../data/locales";
+import { localizedPages } from "../../../data/localized-pages";
+import { localizedArticles } from "../../../data/localized-articles";
+import { site } from "../../../data/site";
+
+export function getStaticPaths() { return activeLocales().map(({ slug }) => ({ params: { locale: slug } })); }
+const locale = Astro.params.locale as Locale;
+const copy = localizedPages[locale]?.blog;
+if (!copy) throw new Error(`Missing localized blog index: ${locale}`);
+const url = `${site.url}/${locale}/blog/`;
+const jsonLd = { "@context": "https://schema.org", "@type": "CollectionPage", name: copy.title, description: copy.description, url, inLanguage: locale === "zh-hant" ? "zh-Hant" : locale === "pt-br" ? "pt-BR" : locale, hasPart: comparisonSlugs.map((slug) => ({ "@type": "Article", headline: localizedArticles[locale]?.[slug].title, url: `${url}${slug}/` })) };
+---
+<BaseLayout locale={locale} title={copy.title} description={copy.description} noindex={!isPublishedLocale(locale)} jsonLd={jsonLd}>
+  <section class="page-hero"><div class="ambient-orb"></div><span>{copy.kicker}</span><h1>{copy.title}</h1><p>{copy.intro}</p></section>
+  <section class="section blog-list"><div class="section-head"><div><div class="section-label">{copy.kicker}</div><h2>{copy.listHeading}</h2></div></div><div class="post-grid">{comparisonSlugs.map((slug, index) => <LocalizedPostCard locale={locale} slug={slug} index={index} />)}</div></section>
+</BaseLayout>

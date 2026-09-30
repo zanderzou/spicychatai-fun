@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { activeLocales } from "../../data/active-locales";
+import { infoPageKeys, isPublishedLocale, type InfoPageKey, type Locale } from "../../data/locales";
+import { localizedPages } from "../../data/localized-pages";
+import { site } from "../../data/site";
+
+export function getStaticPaths() {
+  return activeLocales().flatMap(({ slug }) => infoPageKeys.map((page) => ({ params: { locale: slug, page } })));
+}
+const locale = Astro.params.locale as Locale;
+const page = Astro.params.page as InfoPageKey;
+const copy = localizedPages[locale]?.info[page];
+if (!copy) throw new Error(`Missing localized information page: ${locale}/${page}`);
+const url = `${site.url}/${locale}/${page}/`;
+const jsonLd = { "@context": "https://schema.org", "@type": "WebPage", name: copy.title, description: copy.description, url, inLanguage: locale === "zh-hant" ? "zh-Hant" : locale === "pt-br" ? "pt-BR" : locale, isPartOf: { "@type": "WebSite", name: site.name, url: site.url } };
+---
+<BaseLayout locale={locale} title={`${copy.title} | Spicy Chat AI`} description={copy.description} noindex={!isPublishedLocale(locale)} jsonLd={jsonLd}>
+  <section class="info-hero"><div class="ambient-orb"></div><span>{copy.kicker}</span><h1>{copy.title}</h1><p>{copy.intro}</p></section>
+  <article class="info-content localized-info">{copy.sections.map((section) => <section><h2>{section.heading}</h2>{section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}</section>)}</article>
+</BaseLayout>

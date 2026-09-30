@@ -2,12 +2,18 @@
 import type { CollectionEntry } from "astro:content";
 import Icon from "./Icon.astro";
 import { site } from "../data/site";
-interface Props { posts: CollectionEntry<"blog">[]; }
-const { posts } = Astro.props;
+import { comparisonSlugs, routeFor, type Locale } from "../data/locales";
+import { localizedPages } from "../data/localized-pages";
+import { localizedArticles } from "../data/localized-articles";
+interface Props { posts: CollectionEntry<"blog">[]; locale?: Locale; }
+const { posts, locale } = Astro.props;
+const copy = locale ? localizedPages[locale]?.ui : null;
+const home = routeFor(locale ?? "");
+const info = (name: string) => routeFor(locale ?? "", name);
 ---
 <footer><div class="footer-grid">
-  <div><a class="brand" href="/"><span class="brand-icon">SC</span><strong>Spicy Chat <span>AI</span></strong></a><p>Independent research on Spicy Chat AI characters, adult roleplay, models, context memory, personas, current plan features, platform rules, privacy, and alternatives.</p></div>
-  <div><h3>Explore</h3><a href="/#features">SpicyChat features</a><a href="/#compare">Roleplay comparisons</a><a href="/#privacy">Memory & privacy</a><a href={site.officialUrl} rel="noopener" target="_blank">Official website <Icon name="arrow" /></a></div>
-  <div><h3>Latest guides</h3>{posts.slice(0,3).map((post)=><a href={`/blog/${post.id}/`}>{post.data.title}</a>)}</div>
-  <div><h3>Information</h3><a href="/about/">About</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/editorial-policy/">Editorial policy</a><a href="/contact/">Contact</a></div>
-</div><div class="footer-bottom"><span>© <span data-year>2026</span> Spicy Chat AI</span><span>Independent · Not affiliated with SpicyChat</span><span>Adults 18+ · No chat data collected</span></div></footer>
+  <div><a class="brand" href={home}><span class="brand-icon">SC</span><strong>Spicy Chat <span>AI</span></strong></a><p>{copy?.independent ?? "Independent research on Spicy Chat AI characters, adult roleplay, models, context memory, personas, current plan features, platform rules, privacy, and alternatives."}</p></div>
+  <div><h3>{copy?.start ?? "Explore"}</h3><a href={`${home}#features`}>{copy?.controls ?? "SpicyChat features"}</a><a href={`${home}#compare`}>{copy?.compare ?? "Roleplay comparisons"}</a><a href={`${home}#privacy`}>{copy?.privacy ?? "Memory & privacy"}</a><a href={site.officialUrl} rel="noopener" target="_blank">{copy?.official ?? "Official website"} <Icon name="arrow" /></a></div>
+  <div><h3>{copy?.blog ?? "Latest comparisons"}</h3>{locale ? comparisonSlugs.slice(0, 3).map((slug) => <a href={routeFor(locale, `blog/${slug}`)}>{localizedArticles[locale]?.[slug].title}</a>) : posts.slice(0, 3).map((post) => <a href={`/blog/${post.id}/`}>{post.data.title}</a>)}</div>
+  <div><h3>{copy?.about ?? "Information"}</h3><a href={info("about")}>{copy?.about ?? "About"}</a><a href={info("privacy")}>{copy?.privacy ?? "Privacy"}</a><a href={info("terms")}>{copy?.terms ?? "Terms"}</a><a href={info("editorial-policy")}>{copy?.editorial ?? "Editorial policy"}</a><a href={info("contact")}>{copy?.contact ?? "Contact"}</a></div>
+</div><div class="footer-bottom"><span>© <span data-year>2026</span> Spicy Chat AI</span><span>{copy?.independent ?? "Independent · Not affiliated with SpicyChat"}</span><span>{copy?.adults ?? "Adults 18+ · No chat data collected"}</span></div></footer>
