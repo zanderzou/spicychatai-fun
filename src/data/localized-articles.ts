@@ -1,5 +1,6 @@
 import type { ComparisonSlug, Locale } from "./locales";
 import { zhHantArticles } from "./locale-zh-hant-articles";
+import { esArticles } from "./locale-es-articles";
 
 export interface LocalizedArticle {
   title: string;
@@ -46,6 +47,7 @@ export const comparisonSources: Record<ComparisonSlug, { name: string; url: stri
 // 12-page release gate, never the mere presence of content in this object.
 export const localizedArticles: Partial<Record<Locale, Record<ComparisonSlug, LocalizedArticle>>> = {
   "zh-hant": zhHantArticles,
+  es: esArticles,
   ja: {
     "spicychat-vs-character-ai": {
       title: "Spicy Chat AI と Character.AI：物語の自由度とルールを比較",

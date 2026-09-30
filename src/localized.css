@@ -9,6 +9,8 @@
 .localized-research h3{font-size:clamp(1.3rem,2vw,1.8rem);line-height:1.25;margin:0 0 10px}
 .localized-research p{color:var(--muted);line-height:1.75;margin:10px 0}
 .localized-article .article-content .localized-table{margin:26px 0}
+.localized-article .article-header{margin-bottom:clamp(30px,4vw,50px)}
+.localized-article .article-lede{font-size:clamp(1.08rem,1.45vw,1.25rem);line-height:1.7}
 .localized-article .article-content section{scroll-margin-top:100px}
 .localized-article .article-verdict{margin-top:38px;padding:18px 24px;border-left:3px solid #b7ff2a;background:rgba(183,255,42,.065)}
 .localized-article .article-verdict h2{margin-top:0}
