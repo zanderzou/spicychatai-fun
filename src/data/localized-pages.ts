@@ -1,4 +1,5 @@
 import type { ComparisonSlug, InfoPageKey, Locale } from "./locales";
+import { zhHantEdition } from "./locale-zh-hant-pages";
 
 export interface LocalizedInfoPage {
   title: string;
@@ -36,8 +37,9 @@ export interface LocalizedEdition {
   info: Record<InfoPageKey, LocalizedInfoPage>;
 }
 
-// Draft only. No locale route is published until every language and page passes QA.
+// Drafts are published only after each complete 12-page locale passes its own gate.
 export const localizedPages: Partial<Record<Locale, LocalizedEdition>> = {
+  "zh-hant": zhHantEdition,
   ja: {
     ui: {
       language: "言語", home: "ホーム", start: "始め方", controls: "モデルと記憶", compare: "比較", blog: "比較記事",

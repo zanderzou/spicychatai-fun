@@ -13,8 +13,9 @@ const availableLocales = /^\/404(?:\/|$)/.test(Astro.url.pathname) ? [] : active
 const alternates = languageAlternates(Astro.url.pathname, availableLocales.map(({ slug }) => slug));
 const options = [{ lang: "en", label: "English", href: alternates[0].href }, ...availableLocales.map((item) => ({ lang: item.lang, label: item.label, href: alternates.find((entry) => entry.lang === item.lang)!.href }))];
 const current = locale ? locales.find((item) => item.slug === locale)!.lang : "en";
+const currentLabel = locale === "zh-hant" ? "繁中" : current.toUpperCase();
 ---
-<header class="site-header">
+<header class:list={["site-header", availableLocales.length > 0 && "has-locales"]}>
   <a class="brand" href={home} aria-label="Spicy Chat AI home"><span class="brand-icon">SC</span><strong>Spicy Chat <span>AI</span></strong></a>
   <nav aria-label={copy?.navigation ?? "Main navigation"}>
     <a href={`${home}#how-it-works`}>{copy?.start ?? "Start"}</a>
@@ -23,7 +24,7 @@ const current = locale ? locales.find((item) => item.slug === locale)!.lang : "e
     <a href={blog}>{copy?.blog ?? "Blog"}</a>
   </nav>
   <a class="official-link" href={site.officialUrl} rel="noopener" target="_blank">{copy?.official ?? "Open official SpicyChat"} <Icon name="arrow" /></a>
-  {availableLocales.length > 0 && <details class="language-menu"><summary aria-label={copy?.language ?? "Language"}>{current.toUpperCase()}</summary><div>{options.map((item) => <a href={item.href} lang={item.lang} aria-current={item.lang === current ? "page" : undefined}>{item.label}</a>)}</div></details>}
+  {availableLocales.length > 0 && <details class="language-menu"><summary aria-label={copy?.language ?? "Language"}>{currentLabel}</summary><div>{options.map((item) => <a href={item.href} lang={item.lang} aria-current={item.lang === current ? "page" : undefined}>{item.label}</a>)}</div></details>}
   <button class="menu-button" type="button" aria-label={copy?.menu ?? "Open menu"} aria-expanded="false" data-menu-button><Icon name="menu" /></button>
   <div class="mobile-nav" data-mobile-nav>
     <a href={`${home}#how-it-works`}>{copy?.start ?? "Start"}</a>

@@ -1,4 +1,5 @@
 import type { ComparisonSlug, Locale } from "./locales";
+import { zhHantArticles } from "./locale-zh-hant-articles";
 
 export interface LocalizedArticle {
   title: string;
@@ -41,9 +42,10 @@ export const comparisonSources: Record<ComparisonSlug, { name: string; url: stri
   ],
 };
 
-// Draft content is deliberately incomplete. Routes and hreflang must not use
-// this object until all nine locales and all five comparisons are present.
+// Per-locale drafts can render privately; publication follows the separate
+// 12-page release gate, never the mere presence of content in this object.
 export const localizedArticles: Partial<Record<Locale, Record<ComparisonSlug, LocalizedArticle>>> = {
+  "zh-hant": zhHantArticles,
   ja: {
     "spicychat-vs-character-ai": {
       title: "Spicy Chat AI と Character.AI：物語の自由度とルールを比較",
