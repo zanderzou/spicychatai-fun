@@ -1,6 +1,7 @@
 import type { ComparisonSlug, InfoPageKey, Locale } from "./locales";
 import { zhHantEdition } from "./locale-zh-hant-pages";
 import { esEdition } from "./locale-es-pages";
+import { ptBrEdition } from "./locale-pt-br-pages";
 
 export interface LocalizedInfoPage {
   title: string;
@@ -42,6 +43,7 @@ export interface LocalizedEdition {
 export const localizedPages: Partial<Record<Locale, LocalizedEdition>> = {
   "zh-hant": zhHantEdition,
   es: esEdition,
+  "pt-br": ptBrEdition,
   ja: {
     ui: {
       language: "言語", home: "ホーム", start: "始め方", controls: "モデルと記憶", compare: "比較", blog: "比較記事",

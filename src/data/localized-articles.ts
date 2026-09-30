@@ -1,6 +1,7 @@
 import type { ComparisonSlug, Locale } from "./locales";
 import { zhHantArticles } from "./locale-zh-hant-articles";
 import { esArticles } from "./locale-es-articles";
+import { ptBrArticles } from "./locale-pt-br-articles";
 
 export interface LocalizedArticle {
   title: string;
@@ -48,6 +49,7 @@ export const comparisonSources: Record<ComparisonSlug, { name: string; url: stri
 export const localizedArticles: Partial<Record<Locale, Record<ComparisonSlug, LocalizedArticle>>> = {
   "zh-hant": zhHantArticles,
   es: esArticles,
+  "pt-br": ptBrArticles,
   ja: {
     "spicychat-vs-character-ai": {
       title: "Spicy Chat AI と Character.AI：物語の自由度とルールを比較",
