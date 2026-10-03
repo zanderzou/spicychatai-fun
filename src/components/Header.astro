@@ -23,7 +23,7 @@ const currentLabel = locale === "zh-hant" ? "繁中" : current.toUpperCase();
     <a href={`${home}#compare`}>{copy?.compare ?? "Compare"}</a>
     <a href={blog}>{copy?.blog ?? "Blog"}</a>
   </nav>
-  <a class="official-link" href={/^\/(?:es|ja|ko|zh-hant|pt-br|ru|de|fr|ar)(?:\/|$)/.test(Astro.url.pathname) ? site.officialUrl : "https://www.playbox.com/?ref=zanderzou"} rel="noopener" target="_blank">{copy?.official ?? "Open official SpicyChat"} <Icon name="arrow" /></a>
+  <a class="official-link" href={/^\/(?:es|ja|ko|zh-hant|pt-br|ru|de|fr|ar)(?:\/|$)/.test(Astro.url.pathname) ? site.officialUrl : "https://www.playbox.com/?ref=zanderzou"} rel="sponsored nofollow noopener" target="_blank">{copy?.official ?? "Open official SpicyChat"} <Icon name="arrow" /></a>
   {availableLocales.length > 0 && <details class="language-menu"><summary aria-label={copy?.language ?? "Language"}>{currentLabel}</summary><div>{options.map((item) => <a href={item.href} lang={item.lang} aria-current={item.lang === current ? "page" : undefined}>{item.label}</a>)}</div></details>}
   <button class="menu-button" type="button" aria-label={copy?.menu ?? "Open menu"} aria-expanded="false" data-menu-button data-open-label={copy?.menu ?? "Open menu"} data-close-label={copy?.closeMenu ?? "Close menu"}><Icon name="menu" /></button>
   <div class="mobile-nav" data-mobile-nav>
