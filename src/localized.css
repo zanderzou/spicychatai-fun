@@ -1,6 +1,10 @@
 .localized-home .hero-copy > *{max-width:710px}
 .localized-home .roleplay-hero h1{max-width:730px;white-space:nowrap;font-size:clamp(3rem,5.1vw,5rem)!important;letter-spacing:-.045em}
 .localized-home .story{display:block}
+.localized-home .intent-grid,.localized-home .faq{display:block}
+.localized-home :is(.intent-grid,.faq) h2{max-width:none;font-size:clamp(1.7rem,2.35vw,2.45rem)!important;line-height:1.2!important}
+.localized-home .intent-copy,.localized-home .faq-list{margin-top:18px;width:100%;max-width:none}
+.localized-home .promotion-disclosure{font-size:.8rem!important;line-height:1.5!important;color:var(--muted);margin:12px 0!important}
 .localized-home .story-copy{width:min(100%,1000px)}
 .localized-home .story-copy .steps{margin-top:24px}
 .localized-home .seo-visual{max-width:620px}

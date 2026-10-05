@@ -1,0 +1,21 @@
+{
+  "domain": "spicychatai.fun",
+  "keyword": "Spicy Chat AI",
+  "languages": [
+    "ja",
+    "ko",
+    "zh-hant",
+    "es",
+    "pt-br",
+    "ru",
+    "de",
+    "fr",
+    "ar"
+  ],
+  "addLanguageFooter": true,
+  "metadataOverrides": {},
+  "authorizedAt": "2026-10-05",
+  "exclude": [
+    "spicybox.fun"
+  ]
+}

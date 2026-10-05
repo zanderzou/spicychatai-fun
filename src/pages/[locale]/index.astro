@@ -7,6 +7,7 @@ import { activeLocales } from "../../data/active-locales";
 import { comparisonSlugs, isPublishedLocale, locales, type Locale } from "../../data/locales";
 import { localizedPages } from "../../data/localized-pages";
 import { site } from "../../data/site";
+import { promotionCopy, promotionUrl } from "../../data/promotions";
 import heroImage from "../../assets/spicychat-user-red-lounge.jpg";
 import secondaryImage from "../../assets/spicychat-user-black-lounge.jpg";
 
@@ -39,7 +40,7 @@ const jsonLd = { "@context": "https://schema.org", "@graph": [
     <section class="hero roleplay-hero">
       <Image class="hero-image" src={heroImage} alt={imageAlts[locale][0]} widths={[640,960,1280,1536]} sizes="100vw" loading="eager" fetchpriority="high" quality={86} />
       <div class="hero-glow"></div>
-      <div class="hero-copy"><div class="kicker">{copy.hero.kicker}</div><h1>Spicy Chat <span>AI</span></h1><p class="hero-tagline">{copy.hero.tagline}</p><p>{copy.hero.body}</p><div class="hero-actions"><a class="button primary" href="#test">{copy.hero.primary} <Icon name="spark" /></a><a class="button ghost" href={`/${locale}/blog/`}>{copy.hero.secondary}</a></div><div class="hero-trust"><span>{labels.independent}</span><span>{labels.adults}</span></div></div>
+      <div class="hero-copy"><div class="kicker">{copy.hero.kicker}</div><h1>Spicy Chat <span>AI</span></h1><p class="hero-tagline">{copy.hero.tagline}</p><p>{copy.hero.body}</p><div class="hero-actions"><a class="button primary" href={promotionUrl} rel="sponsored nofollow noopener noreferrer" target="_blank">{copy.hero.primary} <Icon name="spark" /></a><a class="button ghost" href={promotionUrl} rel="sponsored nofollow noopener noreferrer" target="_blank">{copy.hero.secondary}</a></div><p class="promotion-disclosure">{promotionCopy[locale].disclosure}</p><div class="hero-trust"><span>{labels.independent}</span><span>{labels.adults}</span></div></div>
     </section>
     <section class="section intent-grid" id="about"><div><div class="section-label">{copy.intro.kicker}</div><h2>{copy.intro.heading}</h2></div><div class="intent-copy"><p class="lead">{copy.intro.lead}</p><p>{copy.intro.body}</p></div></section>
     <section class="section journey" id="how-it-works"><div class="section-head"><div><div class="section-label">{copy.journey.kicker}</div><h2>{copy.journey.heading}</h2></div><p>{copy.journey.description}</p></div><div class="journey-grid">{copy.journey.cards.map((card, index) => <article><b>0{index + 1}</b><span>{card.label}</span><h3>{card.heading}</h3><p>{card.body}</p></article>)}</div></section>
@@ -50,6 +51,6 @@ const jsonLd = { "@context": "https://schema.org", "@graph": [
     <section class="section seo-copy"><div class="section-head"><div><div class="section-label">{copy.research.kicker}</div><h2>{copy.research.heading}</h2></div><p>{copy.research.description}</p></div><figure class="seo-visual"><Image src={secondaryImage} alt={imageAlts[locale][1]} widths={[640,960,1280]} sizes="(max-width: 640px) 100vw, 1200px" loading="lazy" quality={84} /></figure><div class="localized-research">{copy.research.blocks.map((block) => <article><h3>{block.heading}</h3>{block.paragraphs.map((paragraph) => <p>{paragraph}</p>)}</article>)}</div></section>
     <section class="section"><div class="section-head"><div><div class="section-label">{copy.blog.kicker}</div><h2>{copy.blog.heading}</h2></div><a class="button ghost" href={`/${locale}/blog/`}>{copy.blog.cta} <Icon name="arrow" /></a></div><div class="post-grid">{comparisonSlugs.map((slug, index) => <LocalizedPostCard locale={locale} slug={slug} index={index} />)}</div></section>
     <section class="section faq"><div><div class="section-label">{copy.faq.kicker}</div><h2>{copy.faq.heading}</h2></div><div class="faq-list">{copy.faq.items.map(({ question, answer }) => <details><summary>{question}<span>+</span></summary><p>{answer}</p></details>)}</div></section>
-    <section class="section final-cta"><div><div class="section-label">{copy.final.kicker}</div><h2>{copy.final.heading}</h2><p>{copy.final.body}</p></div><a class="button primary" href={site.officialUrl} rel="noopener" target="_blank">{copy.final.cta} <Icon name="arrow" /></a></section>
+    <section class="section final-cta"><div><div class="section-label">{copy.final.kicker}</div><h2>{copy.final.heading}</h2><p>{copy.final.body}</p></div><a class="button primary" href={promotionUrl} rel="sponsored nofollow noopener noreferrer" target="_blank">{promotionCopy[locale].label} <Icon name="arrow" /></a></section>
   </div>
 </BaseLayout>

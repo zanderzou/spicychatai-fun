@@ -11,6 +11,18 @@ This is an independent editorial publication, not the official provider. Article
 - [Homepage](https://spicychatai.fun/): Overview and practical decision guidance.
 - [Blog and comparisons](https://spicychatai.fun/blog/): Browse the editorial article collection.
 
+## Language editions
+
+- [Japanese](https://spicychatai.fun/ja/): Localized homepage, publication pages, and five comparison articles.
+- [Korean](https://spicychatai.fun/ko/): Localized homepage, publication pages, and five comparison articles.
+- [Traditional Chinese](https://spicychatai.fun/zh-hant/): Localized homepage, publication pages, and five comparison articles.
+- [Spanish](https://spicychatai.fun/es/): Localized homepage, publication pages, and five comparison articles.
+- [Brazilian Portuguese](https://spicychatai.fun/pt-br/): Localized homepage, publication pages, and five comparison articles.
+- [Russian](https://spicychatai.fun/ru/): Localized homepage, publication pages, and five comparison articles.
+- [German](https://spicychatai.fun/de/): Localized homepage, publication pages, and five comparison articles.
+- [French](https://spicychatai.fun/fr/): Localized homepage, publication pages, and five comparison articles.
+- [Arabic](https://spicychatai.fun/ar/): Localized homepage, publication pages, and five comparison articles.
+
 ## Comparisons
 
 - [Spicy Chat AI vs CrushOn AI: Controls, Memory and Cost](https://spicychatai.fun/blog/spicy-chat-ai-vs-crushon-ai/)

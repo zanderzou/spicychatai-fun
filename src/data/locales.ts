@@ -25,7 +25,7 @@ export type InfoPageKey = typeof infoPageKeys[number];
 
 // Slow-roll release ledger. Add at most one fully verified locale per release.
 // An empty list keeps all translated routes out of production and its sitemap.
-export const publishedLocales: readonly Locale[] = [];
+export const publishedLocales: readonly Locale[] = ["ja","ko","zh-hant","es","pt-br","ru","de","fr","ar"];
 export const draftReadyLocales = ["ja", "ko", "zh-hant", "es", "pt-br", "ru", "de", "fr", "ar"] as const;
 export const isPublishedLocale = (locale: Locale) => publishedLocales.includes(locale);
 
