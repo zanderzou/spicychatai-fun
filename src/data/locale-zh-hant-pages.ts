@@ -155,14 +155,9 @@ export const zhHantEdition: LocalizedEdition = {
       ],
     },
     privacy: {
-      title: "隱私權說明", description: "了解 Spicy Chat AI 靜態網站的基本請求資訊、選擇性 Google Analytics、同意撤回、外部連結與資料界線。",
+      title: "隱私權說明", description: "自動 Google Analytics、Cookie、可識別機器人排除與瀏覽器隱私設定。",
       kicker: "隱私權", intro: "本站不是聊天產品：沒有角色對話、上傳、錄音、付款或訪客帳號資料庫。",
-      sections: [
-        { heading: "頁面傳輸所需資訊", paragraphs: ["網站託管及防護服務可能處理 IP 位址、瀏覽器資訊、請求網址、時間與安全訊號等一般連線紀錄。本站不接收 SpicyChat 的聊天內容、人物設定、保存記憶或登入憑證。"] },
-        { heading: "自願同意的流量分析", paragraphs: ["只有你明確同意後才會載入 Google Analytics 4，以了解頁面瀏覽、捲動、外部連結點擊和基本裝置與來源資訊。我們不啟用廣告個人化或 Google signals，送出的頁面網址會移除查詢字串與片段。資料可能由 Google 在其他地區處理。"] },
-        { heading: "拒絕與撤回", paragraphs: ["同意前不載入分析程式。你可從頁面下方的「分析資料設定」拒絕或撤回；選擇儲存在本站瀏覽器的 localStorage，最長 180 天。撤回時會清除可存取的分析 Cookie，並尊重 Global Privacy Control 和 Do Not Track。撤回不代表 Google 已處理的歷史資料立即刪除。"] },
-        { heading: "離開本站之後", paragraphs: ["點選官方產品或比較服務的連結後，請閱讀對方的條款與隱私說明。註冊、對話、語音、圖片與付款會在對方服務進行；不要在任何服務輸入不必要的真實機密資訊。"] },
-      ],
+      sections: [{"heading":"頁面傳輸所需資訊","paragraphs":["網站託管及防護服務可能處理 IP 位址、瀏覽器資訊、請求網址、時間與安全訊號等一般連線紀錄。本站不接收 SpicyChat 的聊天內容、人物設定、保存記憶或登入憑證。"]},{"heading":"Google Analytics 自動流量分析","paragraphs":["一般瀏覽器開啟頁面時，Google Analytics 4 會自動開始統計頁面瀏覽、捲動、外部連結點擊、裝置資訊與流量來源。分析 Cookie 設定於 180 天後到期，使用時可能更新。Google 可能在境外處理資料。我們不啟用 Google signals、廣告個人化或廣告儲存。"]},{"heading":"Cookie、隱私與自動化流量","paragraphs":["GA4 會自動排除已知機器人；本站也會略過可識別爬蟲及明確標示自動化的瀏覽器，但無法保證辨識所有偽裝成人類的機器人。我們尊重 Global Privacy Control、Do Not Track 與 Google Analytics 瀏覽器停用設定。設定的頁面網址不含查詢參數與片段，來源網址只保留來源網域及協定。不傳送對話、提示詞、檔案或表單內容。清除 Cookie 不會刪除 Google 已處理的資料。"]},{"heading":"離開本站之後","paragraphs":["點選官方產品或比較服務的連結後，請閱讀對方的條款與隱私說明。註冊、對話、語音、圖片與付款會在對方服務進行；不要在任何服務輸入不必要的真實機密資訊。"]}],
     },
     terms: {
       title: "使用條款", description: "Spicy Chat AI 繁體中文使用條款：本站的資訊性質、成人虛構內容的責任界線、第三方產品變動與內容權利。",
