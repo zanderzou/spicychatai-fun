@@ -1,0 +1,94 @@
+{
+  "domain": "spicychatai.fun",
+  "timeZone": "Asia/Shanghai",
+  "policy": "New articles are English-only. Quality review is required before a date can enable a release. Existing publications are preserved.",
+  "articles": [
+    {
+      "order": 1,
+      "slug": "spicychat-vs-nomi-public-role-or-companion",
+      "title": "SpicyChat vs Nomi: Story Role or Companion?",
+      "opponent": "Nomi",
+      "readerQuestion": "a public story role versus a continuing private companion",
+      "releaseAt": "2026-10-08T05:25:48.594Z",
+      "language": "en",
+      "approved": true,
+      "status": "editorially-reviewed",
+      "sourcesCheckedAt": "2026-10-08",
+      "reviewedSha256": "8647a43854e24d491a7955a53f65fcfff0d1ee887022e3925d3f70ef52788168",
+      "wordCount": 490,
+      "editorialIntent": "Choose a story-role or ongoing-companion routine while distinguishing character visibility from conversation data.",
+      "sources": [
+        [
+          "SpicyChat Character Visibility",
+          "https://docs.spicychat.ai/product-guides/creating-chatbots/visibility"
+        ],
+        [
+          "Nomi Backstory+",
+          "https://wiki.nomi.ai/What_is_Backstory%2B%3F"
+        ],
+        [
+          "Nomi Privacy Policy",
+          "https://nomi.ai/privacy-policy/"
+        ]
+      ]
+    },
+    {
+      "order": 2,
+      "slug": "spicychat-vs-kindroid-authoring-controls",
+      "title": "SpicyChat vs Kindroid: Authoring a Small World",
+      "opponent": "Kindroid",
+      "readerQuestion": "lorebook authoring versus editable persona instructions",
+      "releaseAt": "2026-10-15T15:03:41.419Z",
+      "language": "en",
+      "approved": true,
+      "status": "editorially-reviewed",
+      "sourcesCheckedAt": "2026-10-08",
+      "reviewedSha256": "6e161c5fc8174fa9f3ecc0c69a9bf1aa4cdf77f7be0a225b52e24435fc7044b8",
+      "wordCount": 478,
+      "editorialIntent": "Evaluate a small original fictional-world fact through supported authoring controls and targeted dialogue.",
+      "sources": [
+        [
+          "SpicyChat Lorebooks",
+          "https://docs.spicychat.ai/product-guides/lorebook"
+        ],
+        [
+          "SpicyChat Personality Guide",
+          "https://docs.spicychat.ai/product-guides/creating-chatbots/personality"
+        ],
+        [
+          "Kindroid Personality Controls",
+          "https://kindroid.ai/v2/docs/customizing-personality/"
+        ]
+      ]
+    },
+    {
+      "order": 3,
+      "slug": "spicychat-vs-chai-scene-pacing",
+      "title": "SpicyChat vs CHAI: Scene Pacing on a Phone",
+      "opponent": "CHAI",
+      "readerQuestion": "a paragraph-led scene versus a short mobile conversation",
+      "releaseAt": "2026-10-23T01:05:23.066Z",
+      "language": "en",
+      "approved": true,
+      "status": "editorially-reviewed",
+      "sourcesCheckedAt": "2026-10-08",
+      "reviewedSha256": "72e04a5785826391425b7081ce0547fa70959b1f0e5792879ae4c411a67bc8e0",
+      "wordCount": 478,
+      "editorialIntent": "Evaluate a bounded fictional scene through concrete turn-level pacing and player-agency checks.",
+      "sources": [
+        [
+          "SpicyChat Greeting Guide",
+          "https://docs.spicychat.ai/product-guides/creating-chatbots/greeting"
+        ],
+        [
+          "SpicyChat Official Mobile Routes",
+          "https://support.spicychat.ai/support/solutions/articles/153000260629-mobile-apps"
+        ],
+        [
+          "CHAI Official Website",
+          "https://www.chai-research.com/"
+        ]
+      ]
+    }
+  ]
+}
