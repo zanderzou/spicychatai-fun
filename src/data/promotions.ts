@@ -1,7 +1,7 @@
 import type { Locale } from "./locales";
 
 // Promotions are not source citations. Keep article sources and legal links direct.
-export const promotionUrl = "https://www.playbox.com/?ref=zanderzou";
+export const promotionUrl = "https://spicy-box.com/?utm_ref=c546b6e92223b411";
 export const promotionCopy: Record<Locale, { label: string; disclosure: string }> = {
   ja: { label: "Playbox の紹介リンク", disclosure: "広告・紹介リンク：上部のボタンは Playbox に移動します。SpicyChat の機能ではありません。" },
   ko: { label: "Playbox 제휴 링크", disclosure: "광고·제휴 안내: 상단 버튼은 Playbox로 연결됩니다. SpicyChat의 기능이 아닙니다." },

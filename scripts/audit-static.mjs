@@ -7,7 +7,7 @@ const check=(ok,message)=>{if(!ok)failures.push(message);};
 const target=(href)=>{const clean=href.split("#")[0].split("?")[0];if(!clean||!clean.startsWith("/"))return null;if(clean==="/")return path.join(out,"index.html");if(path.extname(clean))return path.join(out,clean);return path.join(out,clean,"index.html");};
 walk(out);const canonicals=new Map();for(const file of files){const rel=path.relative(out,file).replaceAll("\\","/");const html=readFileSync(file,"utf8");const title=html.match(/<title>(.*?)<\/title>/i)?.[1]?.trim();const desc=html.match(/<meta name="description" content="([^"]+)"/i)?.[1]?.trim();const lang=html.match(/<html\s+lang="([^"]+)"/i)?.[1]??"en";const minDesc=/^(ja|ko|zh)/i.test(lang)?35:70;const canonical=html.match(/<link rel="canonical" href="([^"]+)"/i)?.[1];const h1=(html.match(/<h1(?:\s|>)/gi)??[]).length;check(Boolean(title),`${rel}: missing title`);check(Boolean(desc)&&desc.length>=minDesc&&desc.length<=180,`${rel}: description length`);check(Boolean(canonical?.startsWith("https://spicychatai.fun/")),`${rel}: canonical`);check(h1===1,`${rel}: expected one h1, got ${h1}`);check(/<meta name="robots"/i.test(html),`${rel}: robots`);check(/<meta property="og:image"/i.test(html),`${rel}: Open Graph`);if(canonical){check(!canonicals.has(canonical),`${rel}: duplicate canonical`);canonicals.set(canonical,rel);}for(const img of html.match(/<img\b[^>]*>/gi)??[])check(/\salt="[^"]+"/i.test(img),`${rel}: image alt`);for(const match of html.matchAll(/href="([^"]+)"/gi)){const item=target(match[1]);if(item)check(existsSync(item),`${rel}: broken ${match[1]}`);}}
 check(existsSync(path.join(out,"robots.txt")),"missing robots.txt");check(existsSync(path.join(out,"sitemap-index.xml")),"missing sitemap");check(existsSync(path.join(out,"rss.xml")),"missing rss");check(existsSync(path.join(out,"29e6685c404b4754b70a6c97242af8be.txt")),"missing IndexNow key");
-const referral="https://www.playbox.com/?ref=zanderzou";
+const referral="https://spicy-box.com/?utm_ref=c546b6e92223b411";
 // Retain the accepted homepage and header CTA copy; citations remain direct below.
 const acceptedPromotionLabels=new Set(['Open official SpicyChat','Get Started','Compare privacy approaches','Browse all comparisons','Visit official SpicyChat','Sponsored referral: Playbox']);
 const englishArticles=files.filter((file)=>path.relative(out,file).replaceAll("\\","/").startsWith("blog/spicychat-")||path.relative(out,file).replaceAll("\\","/").startsWith("blog/spicy-chat-ai-"));
@@ -27,6 +27,11 @@ for(const file of files){
   for(const link of html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi)){
     if(!link[1].includes(`href="${referral}"`))continue;
     const label=link[2].replace(/<[^>]+>/g," ").replace(/\s+/g," ").trim();
+    // Preserve the existing mobile header entrance; this request changes its URL only.
+    if(label==='Official SpicyChat'&&link.index<html.indexOf('</header>')){
+      check(/\brel="noopener"/.test(link[1])&&/\btarget="_blank"/.test(link[1]),`${path.relative(out,file)}: mobile header attributes changed`);
+      continue;
+    }
     check(label.includes('Playbox')||acceptedPromotionLabels.has(label),`${path.relative(out,file)}: unexpected promotion label`);
     check(/rel="[^"]*sponsored[^"]*nofollow/.test(link[1]),`${path.relative(out,file)}: referral missing sponsored/nofollow`);
   }
