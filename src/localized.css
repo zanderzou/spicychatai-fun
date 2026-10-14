@@ -31,3 +31,8 @@
 @media(max-width:400px){.site-header.has-locales{gap:6px}.site-header.has-locales .brand{gap:7px}.site-header.has-locales .brand strong{font-size:13px}.site-header.has-locales .language-menu summary{padding:8px 9px;font-size:11px}}
 [dir="rtl"] .language-menu>div{right:auto;left:0}
 [dir="rtl"] .localized-article .article-verdict{border-left:0;border-right:3px solid #b7ff2a}
+
+/* Keep the translated action comfortably inside the narrow first viewport. */
+@media(max-width:360px){
+  html[data-locale-edition] .roleplay-hero[data-hero-kind="portrait"]>.hero-image[data-hero-artwork]{height:290px!important}
+}
