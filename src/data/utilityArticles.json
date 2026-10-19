@@ -1,0 +1,12 @@
+{
+  "domain": "spicychatai.fun",
+  "label": "spicychatai.fun",
+  "origin": "https://spicychatai.fun",
+  "slugs": [
+    "spicychat-edited-message-memory-remains",
+    "spicychat-context-window-not-message-count"
+  ],
+  "articlePrefix": "/blog/",
+  "homePath": "/",
+  "blogPath": "/blog/"
+}
