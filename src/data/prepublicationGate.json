@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "domain": "spicychatai.fun",
+  "grandfathered": [
+    {
+      "order": 1,
+      "slug": "spicychat-vs-nomi-public-role-or-companion",
+      "releaseAt": "2026-10-08T05:25:48.594Z",
+      "status": 200,
+      "liveVerifiedAt": "2026-10-23T05:20:07.755Z",
+      "canonical": "https://spicychatai.fun/blog/spicychat-vs-nomi-public-role-or-companion/",
+      "language": "en",
+      "titleMatches": true,
+      "discoveryVerified": true,
+      "sourceCommit": "097a168ae9939919541bf557f1a7a573b990fe58",
+      "deploymentId": "f4ca46b1-ba7e-4d6e-a07a-e177d10fcc32",
+      "responseSha256": "88a44aed07f79bd43f11943da981016ca7c3975ed5ad98292793f4c40b2e9431"
+    },
+    {
+      "order": 2,
+      "slug": "spicychat-vs-kindroid-authoring-controls",
+      "releaseAt": "2026-10-15T15:03:41.419Z",
+      "status": 200,
+      "liveVerifiedAt": "2026-10-23T05:20:07.755Z",
+      "canonical": "https://spicychatai.fun/blog/spicychat-vs-kindroid-authoring-controls/",
+      "language": "en",
+      "titleMatches": true,
+      "discoveryVerified": true,
+      "sourceCommit": "097a168ae9939919541bf557f1a7a573b990fe58",
+      "deploymentId": "f4ca46b1-ba7e-4d6e-a07a-e177d10fcc32",
+      "responseSha256": "c0a6b485d7b31aae47a6867fd9ae8338da49ccfdc43490fc67af0ad5f4b2154c"
+    },
+    {
+      "order": 3,
+      "slug": "spicychat-vs-chai-scene-pacing",
+      "releaseAt": "2026-10-23T01:05:23.066Z",
+      "status": 200,
+      "liveVerifiedAt": "2026-10-23T05:20:07.755Z",
+      "canonical": "https://spicychatai.fun/blog/spicychat-vs-chai-scene-pacing/",
+      "language": "en",
+      "titleMatches": true,
+      "discoveryVerified": true,
+      "sourceCommit": "097a168ae9939919541bf557f1a7a573b990fe58",
+      "deploymentId": "f4ca46b1-ba7e-4d6e-a07a-e177d10fcc32",
+      "responseSha256": "c3ef83208588ab3797e5f9b0520578cebe6c7c95d753f09481bff2c143a72c57"
+    }
+  ],
+  "certificates": {}
+}
