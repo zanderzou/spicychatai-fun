@@ -45,5 +45,59 @@
       "responseSha256": "c3ef83208588ab3797e5f9b0520578cebe6c7c95d753f09481bff2c143a72c57"
     }
   ],
-  "certificates": {}
+  "certificates": {
+    "spicychat-edited-message-memory-remains": {
+      "schemaVersion": 1,
+      "skill": {
+        "name": "write-tested-seo",
+        "version": "1.5"
+      },
+      "reviewStandard": "portfolio-basic-quality-20261027",
+      "status": "validated",
+      "domain": "spicychatai.fun",
+      "slug": "spicychat-edited-message-memory-remains",
+      "order": 4,
+      "releaseAt": "2026-10-30T03:51:18.066Z",
+      "activationAt": "2026-10-30T03:51:18.066Z",
+      "reviewedAt": "2026-10-27T09:34:19.826Z",
+      "factsCheckedAt": "2026-10-27T09:34:19.826Z",
+      "reviewedBy": "Codex independent article and primary-source review under October27 project override",
+      "contentSha256": "0df71970e6f79416d5a10aeccb37fb4d76027d70af79fc352d4977d05682f77a",
+      "editorialReview": {
+        "readable": true,
+        "useful": true,
+        "factual": true,
+        "experienceClaims": "none",
+        "note": "Current semantic-memory and manager docs confirm message edits do not automatically alter stored memories, and memory deletion does not erase messages."
+      },
+      "observations": [],
+      "officialSources": [
+        {
+          "url": "https://docs.spicychat.ai/product-guides/premium-features/semantic-memory-2.0",
+          "checkedAt": "2026-10-27T09:22:12.225Z",
+          "status": 200,
+          "claim": "Current semantic-memory and manager docs confirm message edits do not automatically alter stored memories, and memory deletion does not erase messages.",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/basic-review-20261027-082146/source-1c8d8b0c9f2b6cf7.json",
+              "sha256": "4a678144fae6fdce3ef474493fd058c36f64300686a9803d844925a9d24e80ca"
+            }
+          ]
+        },
+        {
+          "url": "https://docs.spicychat.ai/product-guides/premium-features/memory-manager",
+          "checkedAt": "2026-10-27T09:22:12.395Z",
+          "status": 200,
+          "claim": "Current semantic-memory and manager docs confirm message edits do not automatically alter stored memories, and memory deletion does not erase messages.",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/basic-review-20261027-082146/source-a0eb6e08ed1502c1.json",
+              "sha256": "d4304076f11e701b3d0a70483cd4300569b3cb99b2d748368615e6b74cdccff0"
+            }
+          ]
+        }
+      ],
+      "certificateDigest": "c11b640f6901df6331198b6c18315e67a581ca35bdc7ef67885f0f0dd02a1132"
+    }
+  }
 }

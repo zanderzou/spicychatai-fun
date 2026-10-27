@@ -1,0 +1,16 @@
+{
+  "domain": "spicychatai.fun",
+  "slug": "spicychat-edited-message-memory-remains",
+  "reviewedAt": "2026-10-27T09:34:19.826Z",
+  "standard": "portfolio-basic-quality-20261027",
+  "contentSha256": "0df71970e6f79416d5a10aeccb37fb4d76027d70af79fc352d4977d05682f77a",
+  "decision": "Current semantic-memory and manager docs confirm message edits do not automatically alter stored memories, and memory deletion does not erase messages.",
+  "materialChanges": false,
+  "limitations": "Sourced informational guide with clearly illustrative examples; no account, generation, billing, deletion or performance operation claimed.",
+  "sources": [
+    "https://docs.spicychat.ai/product-guides/premium-features/semantic-memory-2.0",
+    "https://docs.spicychat.ai/product-guides/premium-features/memory-manager"
+  ],
+  "activationAt": "2026-10-30T03:51:18.066Z",
+  "originalPlan": "2026-10-30T03:51:18.066Z"
+}
