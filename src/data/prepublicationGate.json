@@ -98,6 +98,67 @@
         }
       ],
       "certificateDigest": "c11b640f6901df6331198b6c18315e67a581ca35bdc7ef67885f0f0dd02a1132"
+    },
+    "spicychat-context-window-not-message-count": {
+      "schemaVersion": 1,
+      "skill": {
+        "name": "write-tested-seo",
+        "version": "1.5"
+      },
+      "reviewStandard": "portfolio-basic-quality-20261027",
+      "status": "validated",
+      "domain": "spicychatai.fun",
+      "slug": "spicychat-context-window-not-message-count",
+      "order": 5,
+      "releaseAt": "2026-11-06T07:48:23.066Z",
+      "activationAt": "2026-11-06T07:48:23.066Z",
+      "reviewedAt": "2026-11-03T10:59:59.613Z",
+      "factsCheckedAt": "2026-11-03T10:52:00.885Z",
+      "reviewedBy": "Codex current primary-source and independent basic editorial review under explicit October27 standard",
+      "contentSha256": "a5510093fee6e8f6f5faef4bbfdb9ee7576df3b92cf3affcd5c373cd6b2c4fe5",
+      "editorialReview": {
+        "readable": true,
+        "useful": true,
+        "factual": true,
+        "experienceClaims": "none",
+        "note": "Separates context, output and stored summaries; gives correct explicitly illustrative6000minus1500 arithmetic and a controlled fictional continuity-check method. Current primary docs support shared budget and model/tier constraints. No current plan limit, tokenizer measurement or performed product test is invented."
+      },
+      "observations": [],
+      "officialSources": [
+        {
+          "url": "https://docs.spicychat.ai/advanced/tokens-and-context",
+          "status": "content-retrieved",
+          "checkedAt": "2026-11-03T10:52:00.885Z",
+          "claim": "Context is a shared token budget across character setup, messages, replies and instructions; limits depend on both model and tier, while reply length is a distinct constraint.",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/basic-review-20261103-104731/dc2b8acf21c5a7dee43f.json",
+              "sha256": "ae8531d8985007970b755d1099bbf8e1aeb7a1704c6e775baa1d01fab5ffe818"
+            },
+            {
+              "path": "private-editorial-evidence/basic-review-20261103-104731/dc2b8acf21c5a7dee43f.html",
+              "sha256": "d2260e0ec614e841c61f9141c4b9dc384682779377e84de2736f7636e9df1e46"
+            }
+          ]
+        },
+        {
+          "url": "https://docs.spicychat.ai/product-guides/premium-features/semantic-memory-2.0",
+          "status": "content-retrieved",
+          "checkedAt": "2026-11-03T10:52:00.412Z",
+          "claim": "Semantic Memory summarizes selected earlier-chat details separately and retrieves relevant memories; it does not imply every prior message is present in active context.",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/basic-review-20261103-104731/1c8d8b0c9f2b6cf716da.json",
+              "sha256": "33ddd851ebaac2e0337adf676830681624c220089d217ed369caaebb4f8261e4"
+            },
+            {
+              "path": "private-editorial-evidence/basic-review-20261103-104731/1c8d8b0c9f2b6cf716da.html",
+              "sha256": "014abf907f052ef6c8096b8f01045d0f58d66cd1ce3912220cfa9e8758d8d7af"
+            }
+          ]
+        }
+      ],
+      "certificateDigest": "aa9e90a10e758b501ef8a8749b917a8686713b223cef9d6d7efed947aae6c017"
     }
   }
 }

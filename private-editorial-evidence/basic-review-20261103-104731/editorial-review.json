@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-03T10:54:03.098Z",
+  "reviewer": "weekly_sources independent basic editorial review",
+  "reviewStandard": "portfolio-basic-quality-20261027",
+  "skill": {
+    "name": "write-tested-seo",
+    "version": "1.5",
+    "humanOverride": "Useful truthful sourced informational guides do not require forced product tests, login, screenshot quotas or rigid24h certificates."
+  },
+  "domain": "spicychatai.fun",
+  "file": "src/editorial-drafts/spicychat-context-window-not-message-count.md",
+  "slug": "spicychat-context-window-not-message-count",
+  "title": "SpicyChat Context Tokens Are Not a Fixed Number of Messages",
+  "sourceCommit": "a02f457f7b5f1cc7e8eeadf81134ed0fc2b8a910",
+  "productionAtVerifiedInventory": {
+    "id": "97656c7f-737f-4c8b-970d-375c683c3fc4",
+    "url": "https://97656c7f.spicychatai-fun.pages.dev",
+    "commit": "a02f457f7b5f1cc7e8eeadf81134ed0fc2b8a910",
+    "createdAt": "2026-10-29T13:26:49.008181Z"
+  },
+  "sourceIdentity": {
+    "path": "source-reviews/spicychatai.fun/production-identity.json",
+    "sha256": "9841aa6a75beb691d02394a09eceadf5b9d4ec759bccb1e1e177aaa7f82d1ec6",
+    "checkedAt": "2026-11-03T10:53:11.715Z",
+    "method": "Independent noninteractive git ls-remote plus current Cloudflare canonical_deployment read; no repository or provider modification."
+  },
+  "originalContentSha256": "a5510093fee6e8f6f5faef4bbfdb9ee7576df3b92cf3affcd5c373cd6b2c4fe5",
+  "rawContentSha256": "a5510093fee6e8f6f5faef4bbfdb9ee7576df3b92cf3affcd5c373cd6b2c4fe5",
+  "finalRecommendedContentSha256": "a5510093fee6e8f6f5faef4bbfdb9ee7576df3b92cf3affcd5c373cd6b2c4fe5",
+  "finalCopy": "source-reviews/spicychatai.fun/spicychat-context-window-not-message-count-recommended-final.md",
+  "plannedReleaseAt": "2026-11-06T07:48:23.066Z",
+  "effectiveNotBefore": "2026-11-06T07:48:23.066Z",
+  "contentModified": false,
+  "requiredContentChanges": [],
+  "basicQualityPassed": true,
+  "recommendation": "Suitable for parent basic editorial approval under the explicit October27 standard, keeping the current notBefore and roughly weekly spacing. This independent report does not approve, issue a certificate, change a gate or repository, deploy, or claim the future article is public.",
+  "readerIntent": "Explain why context tokens cannot guarantee a fixed count of remembered chat messages, separating active context, single-reply length and retrieved compact memories.",
+  "checks": {
+    "clearReaderQuestion": true,
+    "concreteUsefulGuidance": true,
+    "readableEnglish": true,
+    "keyClaimsSupported": true,
+    "honestLimits": true,
+    "noInventedExperience": true,
+    "noUnsupportedRecallGuarantee": true,
+    "fictionalArithmeticCorrect": true,
+    "illustrativeCountsNotPlanLimits": true,
+    "modelAndTierConstraintsExplained": true,
+    "noStaleTierNumbers": true,
+    "noNewPageOrTranslation": true,
+    "originalPlannedDatesPreserved": true,
+    "noDateOnlyRefresh": true,
+    "currentFuturePrivate": true
+  },
+  "claimReview": [
+    {
+      "articleClaim": "Context uses a shared token budget across character setup, recent messages/replies and instructions; both model and tier constrain available context.",
+      "source": "Current Tokens and Context primary document",
+      "assessment": "Supported by the current source. The source now explicitly states the lower of tier and model ceilings. The article makes the narrower supported statement, without repeating a stale tier table."
+    },
+    {
+      "articleClaim": "Output length and compact selected memories are distinct from active context.",
+      "source": "Current Tokens and Context and Semantic Memory2.0 primary documents",
+      "assessment": "Supported. Semantic Memory describes compact summaries and relevant-memory retrieval; the guide does not assert all prior messages or every stored memory are included in a reply."
+    },
+    {
+      "articleClaim": "The6000minus1500 example leaves4500; assumed150or300tokens/message gives30or15messages.",
+      "source": "Clearly marked original illustrative arithmetic",
+      "assessment": "Arithmetic correct. These are expressly invented assumptions, neither measured tokenizer outputs nor current SpicyChat limits. No numerical product-plan correction is needed."
+    },
+    {
+      "articleClaim": "A fictional continuity-check result should not establish a universal recall rate or isolate a cause.",
+      "source": "Original scoped methodology, not a performed test",
+      "assessment": "Appropriately bounded. The steps are reader guidance; the guide claims no account session, paid-tier benchmark or performed generation."
+    }
+  ],
+  "officialSources": [
+    {
+      "url": "https://docs.spicychat.ai/advanced/tokens-and-context",
+      "status": 200,
+      "checkedAt": "2026-11-03T10:52:00.885Z",
+      "bodySha256": "d2260e0ec614e841c61f9141c4b9dc384682779377e84de2736f7636e9df1e46",
+      "evidence": "source-reviews/spicychatai.fun/dc2b8acf21c5a7dee43f.json",
+      "evidenceSha256": "ae8531d8985007970b755d1099bbf8e1aeb7a1704c6e775baa1d01fab5ffe818",
+      "bodyEvidence": "source-reviews/spicychatai.fun/dc2b8acf21c5a7dee43f.html",
+      "actualPrimaryTextRead": true,
+      "savedForCertificate": [
+        {
+          "path": "private-editorial-evidence/basic-review-20261103-104731/dc2b8acf21c5a7dee43f.json",
+          "sha256": "ae8531d8985007970b755d1099bbf8e1aeb7a1704c6e775baa1d01fab5ffe818"
+        },
+        {
+          "path": "private-editorial-evidence/basic-review-20261103-104731/dc2b8acf21c5a7dee43f.html",
+          "sha256": "d2260e0ec614e841c61f9141c4b9dc384682779377e84de2736f7636e9df1e46"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.spicychat.ai/product-guides/premium-features/semantic-memory-2.0",
+      "status": 200,
+      "checkedAt": "2026-11-03T10:52:00.412Z",
+      "bodySha256": "014abf907f052ef6c8096b8f01045d0f58d66cd1ce3912220cfa9e8758d8d7af",
+      "evidence": "source-reviews/spicychatai.fun/1c8d8b0c9f2b6cf716da.json",
+      "evidenceSha256": "33ddd851ebaac2e0337adf676830681624c220089d217ed369caaebb4f8261e4",
+      "bodyEvidence": "source-reviews/spicychatai.fun/1c8d8b0c9f2b6cf716da.html",
+      "actualPrimaryTextRead": true,
+      "savedForCertificate": [
+        {
+          "path": "private-editorial-evidence/basic-review-20261103-104731/1c8d8b0c9f2b6cf716da.json",
+          "sha256": "33ddd851ebaac2e0337adf676830681624c220089d217ed369caaebb4f8261e4"
+        },
+        {
+          "path": "private-editorial-evidence/basic-review-20261103-104731/1c8d8b0c9f2b6cf716da.html",
+          "sha256": "014abf907f052ef6c8096b8f01045d0f58d66cd1ce3912220cfa9e8758d8d7af"
+        }
+      ]
+    }
+  ],
+  "currentSourceDrift": {
+    "observed": "Current opened and freshGET tokens guide states32768maximum for the top tier, model-dependent. Search-indexed older text still shows16384.",
+    "readerImpact": "The draft avoids specific subscription context numbers and correctly directs readers to applicable current model/account information. No text change is required; search snippets were not used as the current authority."
+  },
+  "limits": [
+    "Both current first-party documents were searched, opened, fetched200and fully read at10:52Z. No login, product generation, paid tier, backend, account setting, upload or recall benchmark was tested.",
+    "The unchanged original publishDate2026-11-06 andupdatedDate2026-10-19 remain; the new source-review dates belong in the review/gate record, not a cosmetic article date refresh.",
+    "Technical build, layout, full production/body/list verification and any certificate/publication are parent workflow responsibilities. Current route404/noindex/no-store was independently observed."
+  ],
+  "approvalCertificateOrRepositoryChangesPerformed": false,
+  "parentReviewedAt": "2026-11-03T10:59:59.612Z",
+  "parentSourceReview": "Actually searched and opened the current original Tokens and Context and Semantic Memory pages and read the final informational guide. The illustrative budget is explicitly fictional, not a plan benchmark; no account or product test is claimed.",
+  "finalContentSha256": "a5510093fee6e8f6f5faef4bbfdb9ee7576df3b92cf3affcd5c373cd6b2c4fe5",
+  "currentPublicPrefixBeforeBuild": {
+    "source": "a02f457f7b5f1cc7e8eeadf81134ed0fc2b8a910",
+    "production": {
+      "id": "97656c7f-737f-4c8b-970d-375c683c3fc4",
+      "url": "https://97656c7f.spicychatai-fun.pages.dev",
+      "commit": "a02f457f7b5f1cc7e8eeadf81134ed0fc2b8a910",
+      "sourceShaRaw": "a02f457f7b5f1cc7e8eeadf81134ed0fc2b8a910",
+      "createdAt": "2026-10-29T13:26:49.008181Z"
+    },
+    "phase": 4,
+    "bodyAndCanonicalProof": "Separate local baseline-readback.json plus4saved actual200HTML; unchanged3grandfather proofs andexistingbasic4certificate retained."
+  }
+}
